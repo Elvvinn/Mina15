@@ -54,9 +54,22 @@ body {
     cursor: pointer;
 }
 
+.aboutandicon i:hover {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
 .navtext a {
     text-decoration: none;
     color: black;
+}
+
+.privatea {
+    display: none;
+}
+
+.navtext a:hover {
+    text-decoration: underline;
 }
 
 .burger {
@@ -256,6 +269,70 @@ body {
     row-gap: 50px;
 }
 
+.section6 {
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.hashikisectionalti {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.generalsection6 {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.generalkartfoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotosection {
+
+    width: 400px;
+    padding: 20px;
+}
+
+.fotosection img {
+    width: 100%;
+}
+
+.amina {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    color: #4d2c57;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.foterfirstpage {
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    height: 100px;
+}
+
+.generaldivfooter {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.uptextfooter {
+    display: flex;
+    justify-content: space-around;
+}
+
+.uptextfooter a {
+    text-decoration: none;
+    color: black;
+}
 
 @media screen and (max-width: 750px) {
 
@@ -282,4 +359,28 @@ body {
     .hometext {
         text-align: center;
     }
+
+    .generalkartfoto {
+        flex-direction: column;
+    }
+
+    .hashikisectionalti {
+        text-align: center;
+        font-size: 2.5rem;
+        color: gray;
+    }
+
+    .amina {
+        font-size: 1.4rem;
+    }
+
+    .firstthirda {
+        position: fixed;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    
 }
