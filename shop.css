@@ -21,6 +21,7 @@ body {
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 1;
 
 }
 
@@ -67,42 +68,126 @@ body {
 .section1 {
     background-image: url("./img/dd-d95eByKQX2CoQJ4L.png");
     width: 100%;
+    min-height: 48vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 70px;
+    display: flex;
+}
+
+.shoptext {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.searchsectiongeneraldiv {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 50px;
+    align-items: baseline;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+}
+
+.kartshopsection {
+    padding-top: 50px;
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+.kartgeneralshop {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.kartgeneralshop_kart {
+    margin-top: 40px;
+    width: 386px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.kartgeneralshop_kart h4 {
+
+    font-size: 1.5rem;
+}
+
+.kartgeneralshop_kart h5 {
+    font-size: 22px;
+}
+
+.forscale {
+    width: 100%;
+    height: 386px;
+    overflow: hidden;
+}
+
+.kartgeneralshop_kart img {
+    transition: 0.2s;
+}
+
+.forscale img {
+    width: 100%;
+    height: 100%;
+}
+
+.forscale img:hover {
+    scale: 1.1;
 }
 
 
+.footershop {
+    max-width: 100%;
+    min-height: 20vh;
+    padding-top: 10vh;
+    background-color: rgb(240, 229, 229);
+}
 
+.footershopgeneral {
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+.footertextup {
+    display: flex;
+    justify-content: space-between !important;
+}
 
+.leftafooter a {
+    text-decoration: underline;
+    padding: 10px;
+    color: gray;
+    font-size: 1.2rem;
+}
 
+.footerikonlar {
+    display: flex;
+    gap: 20px;
+}
 
+.footerikonlar i {
+    font-size: 25px;
+    transition: .3s;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footerikonlar i:hover {
+    opacity: 0.7;
+}
 
 @media screen and (max-width: 750px) {
 
@@ -112,5 +197,24 @@ body {
 
     .burger {
         display: block;
+    }
+
+    .kartgeneralshop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftafooter {
+        display: flex;
+        flex-direction: column;
+        padding-left: 104px;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 386px) {
+    .kartgeneralshop_kart {
+        width: 320px;
     }
 }
